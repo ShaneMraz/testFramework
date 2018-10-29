@@ -17,6 +17,9 @@
 		71D996C12186957400BB6626 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996C02186957400BB6626 /* UITests.swift */; };
 		71D996D421869C7C00BB6626 /* UITAbstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996D321869C7C00BB6626 /* UITAbstract.swift */; };
 		71D996D621869C9B00BB6626 /* UITLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996D521869C9B00BB6626 /* UITLibrary.swift */; };
+		71D996D821869EC200BB6626 /* UITVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996D721869EC200BB6626 /* UITVerification.swift */; };
+		71D996DA2186A01200BB6626 /* UITViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996D92186A01200BB6626 /* UITViewTests.swift */; };
+		71D996DC2186A40B00BB6626 /* UITFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996DB2186A40B00BB6626 /* UITFirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		71D996C22186957400BB6626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71D996D321869C7C00BB6626 /* UITAbstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITAbstract.swift; sourceTree = "<group>"; };
 		71D996D521869C9B00BB6626 /* UITLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITLibrary.swift; sourceTree = "<group>"; };
+		71D996D721869EC200BB6626 /* UITVerification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITVerification.swift; sourceTree = "<group>"; };
+		71D996D92186A01200BB6626 /* UITViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITViewTests.swift; sourceTree = "<group>"; };
+		71D996DB2186A40B00BB6626 /* UITFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITFirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,7 @@
 		71D996CF218698D000BB6626 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				71D996D92186A01200BB6626 /* UITViewTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -145,6 +152,7 @@
 		71D996D0218698E400BB6626 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				71D996D721869EC200BB6626 /* UITVerification.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 		71D996D22186992000BB6626 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				71D996DB2186A40B00BB6626 /* UITFirstView.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -316,8 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D996D421869C7C00BB6626 /* UITAbstract.swift in Sources */,
+				71D996D821869EC200BB6626 /* UITVerification.swift in Sources */,
+				71D996DC2186A40B00BB6626 /* UITFirstView.swift in Sources */,
 				71D996C12186957400BB6626 /* UITests.swift in Sources */,
 				71D996D621869C9B00BB6626 /* UITLibrary.swift in Sources */,
+				71D996DA2186A01200BB6626 /* UITViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,13 +524,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = testFrameworkTests/Info.plist;
+				INFOPLIST_FILE = uTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zarm.testFrameworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = zarm.uTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -532,13 +544,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = testFrameworkTests/Info.plist;
+				INFOPLIST_FILE = uTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zarm.testFrameworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = zarm.uTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -551,13 +563,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = testFrameworkUITests/Info.plist;
+				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zarm.testFrameworkUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = zarm.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -570,13 +582,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = testFrameworkUITests/Info.plist;
+				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zarm.testFrameworkUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = zarm.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

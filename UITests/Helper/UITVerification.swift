@@ -1,5 +1,5 @@
 //
-//  UITLibrary.swift
+//  UITVerification.swift
 //  UITests
 //
 //  Created by Zhaneordo on 10/28/18.
@@ -9,6 +9,7 @@
 import Foundation
 import XCTest
 
-class UITLibrary: UITAbstract {
-    let firstView = UITFirstView()
+class UITVerification: UITAbstract {
+    
+    
 }
