@@ -14,4 +14,9 @@ class UITViewTests: UITests {
     func test_01() {
         XCTAssertTrue(lib.firstView.verify(), "Unable to find \"First View\".")
     }
+    
+    func test_02() {
+        lib.tabBar.select("Second")
+        XCTAssertTrue(lib.secondView.verify(), "Unable to find \"Second View\".")
+    }
 }

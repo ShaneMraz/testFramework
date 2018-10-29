@@ -11,4 +11,6 @@ import XCTest
 
 class UITLibrary: UITAbstract {
     let firstView = UITFirstView()
+    let secondView = UITSecondView()
+    let tabBar = UITTabBar()
 }
