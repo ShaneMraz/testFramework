@@ -14,6 +14,6 @@ class UITFirstView: UITAbstract {
     func verify() -> Bool {
         let first = app.staticTexts["First View"]
         
-        return first.waitForExistence(timeout: 10)
+        return first.waitForExistence(timeout: 4)
     }
 }

@@ -14,6 +14,6 @@ class UITSecondView: UITAbstract {
     func verify() -> Bool {
         let first = app.staticTexts["Second View"]
         
-        return first.waitForExistence(timeout: 10)
+        return first.waitForExistence(timeout: 4)
     }
 }
