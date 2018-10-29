@@ -13,8 +13,10 @@
 		71D996A62186957200BB6626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D996A42186957200BB6626 /* Main.storyboard */; };
 		71D996A82186957400BB6626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D996A72186957400BB6626 /* Assets.xcassets */; };
 		71D996AB2186957400BB6626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D996A92186957400BB6626 /* LaunchScreen.storyboard */; };
-		71D996B62186957400BB6626 /* testFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996B52186957400BB6626 /* testFrameworkTests.swift */; };
+		71D996B62186957400BB6626 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996B52186957400BB6626 /* Tests.swift */; };
 		71D996C12186957400BB6626 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996C02186957400BB6626 /* UITests.swift */; };
+		71D996D421869C7C00BB6626 /* UITAbstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996D321869C7C00BB6626 /* UITAbstract.swift */; };
+		71D996D621869C9B00BB6626 /* UITLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D996D521869C9B00BB6626 /* UITLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +45,14 @@
 		71D996A72186957400BB6626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71D996AA2186957400BB6626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71D996AC2186957400BB6626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71D996B12186957400BB6626 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		71D996B52186957400BB6626 /* testFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testFrameworkTests.swift; sourceTree = "<group>"; };
+		71D996B12186957400BB6626 /* uTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D996B52186957400BB6626 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		71D996B72186957400BB6626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71D996BC2186957400BB6626 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D996C02186957400BB6626 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		71D996C22186957400BB6626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D996D321869C7C00BB6626 /* UITAbstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITAbstract.swift; sourceTree = "<group>"; };
+		71D996D521869C9B00BB6626 /* UITLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				71D9969D2186957200BB6626 /* testFramework */,
-				71D996B42186957400BB6626 /* testFrameworkTests */,
+				71D996B42186957400BB6626 /* uTests */,
 				71D996BF2186957400BB6626 /* UITests */,
 				71D9969C2186957200BB6626 /* Products */,
 			);
@@ -90,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				71D9969B2186957200BB6626 /* testFramework.app */,
-				71D996B12186957400BB6626 /* Tests.xctest */,
+				71D996B12186957400BB6626 /* uTests.xctest */,
 				71D996BC2186957400BB6626 /* UITests.xctest */,
 			);
 			name = Products;
@@ -110,13 +114,13 @@
 			path = testFramework;
 			sourceTree = "<group>";
 		};
-		71D996B42186957400BB6626 /* testFrameworkTests */ = {
+		71D996B42186957400BB6626 /* uTests */ = {
 			isa = PBXGroup;
 			children = (
-				71D996B52186957400BB6626 /* testFrameworkTests.swift */,
+				71D996B52186957400BB6626 /* Tests.swift */,
 				71D996B72186957400BB6626 /* Info.plist */,
 			);
-			path = testFrameworkTests;
+			path = uTests;
 			sourceTree = "<group>";
 		};
 		71D996BF2186957400BB6626 /* UITests */ = {
@@ -148,7 +152,9 @@
 		71D996D1218698F300BB6626 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				71D996D321869C7C00BB6626 /* UITAbstract.swift */,
 				71D996C02186957400BB6626 /* UITests.swift */,
+				71D996D521869C9B00BB6626 /* UITLibrary.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -180,9 +186,9 @@
 			productReference = 71D9969B2186957200BB6626 /* testFramework.app */;
 			productType = "com.apple.product-type.application";
 		};
-		71D996B02186957400BB6626 /* Tests */ = {
+		71D996B02186957400BB6626 /* uTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 71D996C82186957400BB6626 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = 71D996C82186957400BB6626 /* Build configuration list for PBXNativeTarget "uTests" */;
 			buildPhases = (
 				71D996AD2186957400BB6626 /* Sources */,
 				71D996AE2186957400BB6626 /* Frameworks */,
@@ -193,9 +199,9 @@
 			dependencies = (
 				71D996B32186957400BB6626 /* PBXTargetDependency */,
 			);
-			name = Tests;
+			name = uTests;
 			productName = testFrameworkTests;
-			productReference = 71D996B12186957400BB6626 /* Tests.xctest */;
+			productReference = 71D996B12186957400BB6626 /* uTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		71D996BB2186957400BB6626 /* UITests */ = {
@@ -253,7 +259,7 @@
 			projectRoot = "";
 			targets = (
 				71D9969A2186957200BB6626 /* testFramework */,
-				71D996B02186957400BB6626 /* Tests */,
+				71D996B02186957400BB6626 /* uTests */,
 				71D996BB2186957400BB6626 /* UITests */,
 			);
 		};
@@ -301,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71D996B62186957400BB6626 /* testFrameworkTests.swift in Sources */,
+				71D996B62186957400BB6626 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D996D421869C7C00BB6626 /* UITAbstract.swift in Sources */,
 				71D996C12186957400BB6626 /* UITests.swift in Sources */,
+				71D996D621869C9B00BB6626 /* UITLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		71D996C82186957400BB6626 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		71D996C82186957400BB6626 /* Build configuration list for PBXNativeTarget "uTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				71D996C92186957400BB6626 /* Debug */,

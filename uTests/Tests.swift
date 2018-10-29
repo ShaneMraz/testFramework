@@ -1,6 +1,6 @@
 //
-//  testFrameworkTests.swift
-//  testFrameworkTests
+//  uTests.swift
+//  uTests
 //
 //  Created by Zhaneordo on 10/28/18.
 //  Copyright © 2018 Zhaneordo. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import testFramework
 
-class testFrameworkTests: XCTestCase {
+class uTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
