@@ -1,6 +1,6 @@
 //
-//  testFrameworkUITests.swift
-//  testFrameworkUITests
+//  UITests.swift
+//  UITests
 //
 //  Created by Zhaneordo on 10/28/18.
 //  Copyright © 2018 Zhaneordo. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class testFrameworkUITests: XCTestCase {
+class UITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -24,11 +24,6 @@ class testFrameworkUITests: XCTestCase {
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
 }
